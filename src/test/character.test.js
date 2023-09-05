@@ -1,8 +1,15 @@
-import { Character } from "../character";
+// import { Character } from "../character";
 
+import Bowerman from "../bowerman"
 
 describe('Character', () => {
- const character = new Character('demik', 100, 10, 10, 1);
+ // const character = new Character('demik', 100, 10, 10, 1);
+ // const character = new Bowerman('demik');
+ let character;
+
+ beforeEach(() => {
+  character = new Bowerman('demik');
+});
 
  describe('levelUp', () => {
   test('повышение уровня', () => {
@@ -12,12 +19,12 @@ describe('Character', () => {
 
   test('увеличение атаки на 20%', () => {
    character.levelUp();
-   expect(character.attack).toBe(12);
+   expect(character.attack).toBe(30);
   });
 
   test('увеличиение защиты на 20%', () => {
    character.levelUp();
-   expect(character.defence).toBe(12);
+   expect(character.defence).toBe(30);
   });
 
   test('восполняет здоровья до 100%', () => {
@@ -35,7 +42,7 @@ describe('Character', () => {
  describe('damage', () => {
   test('дамага 50 единиц', () => {
    character.damage(50);
-   expect(character.health).toBe(55);
+   expect(character.health).toBe(62.5);
   });
 
   test('поглощение 50% урона', () => {

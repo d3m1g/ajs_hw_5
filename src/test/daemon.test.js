@@ -1,4 +1,4 @@
-import Daemon from '../classes/daemon';
+import Daemon from '../daemon';
 
 test('Правильно создается объект', () => {
  const daemon = new Daemon('Daemon');

@@ -1,4 +1,4 @@
-import Magician from '../classes/magician';
+import Magician from '../magician';
 
 test('Правильно создается объект', () => {
  const magician = new Magician('Magician');

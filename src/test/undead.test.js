@@ -1,4 +1,4 @@
-import Undead from '../classes/undead';
+import Undead from '../undead';
 
 test('Правильно создается объект', () => {
  const undead = new Undead('Undead');

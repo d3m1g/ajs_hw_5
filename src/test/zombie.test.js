@@ -1,4 +1,4 @@
-import Zombie from '../classes/zombie';
+import Zombie from '../zombie';
 
 test('Правильно создается объект', () => {
  const zombie = new Zombie('Zombie');

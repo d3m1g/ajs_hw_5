@@ -1,4 +1,4 @@
-import Swordsman from '../classes/swordsman';
+import Swordsman from '../swordsman';
 
 test('Правильно создается объект', () => {
  const swordsman = new Swordsman('Swordsman');

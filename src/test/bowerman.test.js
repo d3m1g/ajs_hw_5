@@ -1,4 +1,4 @@
-import Bowerman from '../classes/bowerman';
+import Bowerman from '../bowerman';
 
 test('Правильно создается объект', () => {
  const bowerman = new Bowerman('Bowman');
